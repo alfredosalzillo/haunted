@@ -13,7 +13,7 @@ export default function(renderer) {
 
     constructor() {
       super();
-      this.haunted = new State(renderer, this.update);
+      this.haunted = new State(renderer, () => this.update());
     }
 
     render() {
